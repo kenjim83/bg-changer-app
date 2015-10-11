@@ -24,10 +24,7 @@ var renderBgFromResponse = function(response){
 }
 
 var searchHandler = function(e){
-    // e.preventDefault();
     var inputText = $('#searchBox').val();
-    // console.log(e.keyCode);
-    // var inputText = getInputText(this);
     var finalUrl = buildUrl(inputText);
 
     $.ajax({
@@ -43,7 +40,6 @@ var searchHandler = function(e){
 
 $(document).ready(function(){
     $('#searchBox').keyup(searchHandler);
-    // $('#searchForm').on('submit', searchHandler);
 });
 
 
